@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul>li:first-child{
+            color: red;
+        }
+        ul li:last-child{
+            color:blue;
+        }
+        ul>p{
+            color:aqua
+        }
+      /* 大于号是子代选择器，空格是后代选择器 */
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first">项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li class="last"><div>cuole</div>项目</li>
+        </ul>
+        <li>
+            <div>
+                <div>
+                    <div>
+                        <p>项目</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </body>
+</html>

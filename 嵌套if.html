@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var bianhao = parseInt(prompt("您想加什么油？请填写92或者97."));
+        var sheng = parseFloat(prompt("请填写您添加的油量（单位：升）"));
+        if (bianhao == 92) {
+            if (sheng >= 20) {
+                var price = sheng * 5.9;
+              
+            } else {
+                var price = sheng * 6
+              
+            }
+        } else if (bianhao == 97) {
+            if (sheng >= 30) {
+                let price = sheng * 6.95;
+              
+            } else {
+                 var price = sheng * 7;
+              
+            }
+
+         } 
+        // if(bianhao !== 92||97)
+        else {
+            alert("不好意思，没有这个编号的汽油。")
+
+        }
+        alert("价格为" + price);
+    </script>
+</body>
+
+</html>

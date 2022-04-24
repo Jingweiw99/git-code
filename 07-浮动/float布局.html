@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*如何变成左右的  */
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .logo {
+            border: 1px solid red;
+            height: 40px;
+            width: 100px;
+            float: left;
+            margin-top: 5px;
+
+        }
+
+        nav {
+            border: 1px solid green;
+            width: 200px;
+            height: 50px;
+            float: right;
+        }
+
+        header {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="logo">html</div>
+        <nav>导航</nav>
+    </header>
+</body>
+
+</html>
+<!-- 假设做一个导航，最简单的。
+nav就是导航栏的意思。
+border-box就是宽度包含content。
+-->

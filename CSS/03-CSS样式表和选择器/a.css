@@ -1,0 +1,5 @@
+p {
+    /* 边界实线红色 */
+    border: 1px solid red;
+    font-size: 40px;
+}
